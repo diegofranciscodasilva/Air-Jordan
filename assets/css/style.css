@@ -1,0 +1,298 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+.text__frete {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem 0;
+    background-color: #f3f7ff;
+    font-weight: 500;
+}
+
+.text__frete:hover {
+    color: #ff0000;
+    cursor: pointer;
+}
+
+.home__main {
+    background-image: url('../images/bgmichaeljordan.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: scroll;
+    height: 43vh;
+    position: relative;
+}
+
+.text__first {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    position: absolute;
+    left: 12rem;
+    top: 1rem;
+}
+
+.description__logo {
+    display: flex;
+    align-items: center;
+    padding: 3rem 0 2rem 0;
+    gap: 0.5rem;
+}
+
+.air-jordan__logo {
+    width: 2rem;
+}
+
+.air-jordan__text {
+    color: #fff;
+    font-weight: 500;
+}
+
+.description__title {
+    color: #fff;
+    font-weight: 500;
+    padding: 0 0 1.3rem 0;
+}
+
+.description__text {
+    color: #fff;
+    font-weight: 500;
+    width: 24rem;
+}
+
+.shoes__descriptions {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5rem;
+    padding: 80px 0 80px 0;
+}
+
+.description__shoes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.6rem;
+}
+
+.description__shoes-title {
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.description__shoes-text {
+    font-size: 1.1rem;
+    font-weight: 400;
+    text-align: center;
+}
+
+.cards__shoes {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 5rem;
+}
+
+.products__cards {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-between;
+    gap: 1.5rem;
+    height: auto;
+    width: 20.3rem;
+}
+
+.products__cards-img {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #f3f7ff;
+    height: 11rem;
+    width: 100%;
+}
+
+.products__cards-img img {
+    width: 14rem;
+    transition: transform 1s ease;
+}
+
+.products__cards-img img:hover {
+    transform: scale(1.2);
+}
+
+.products__card-description {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 24px;
+}
+
+.products__card-title {
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+.products__card-subtitle {
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: #4d82f4;
+}
+
+.products__card-price {
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #090971;
+}
+
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #413d3d;
+    padding: 1rem 0.5rem;
+}
+
+.footer__text {
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+.heart {
+    color: #ff0000;
+}
+
+.footer a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.footer a:hover {
+    color: #ffc0cb;
+}
+
+@media (min-width: 1025px) and (max-width: 1312px) {
+    .text__frete {
+        padding: 0.5rem 0;
+    }
+
+    .home__main {
+        height: 40vh;
+    }
+
+    .text__first {
+        left: 8rem;
+        top: 0.5rem;
+    }
+
+    .description__text {
+        width: 40rem;
+    }
+
+    .cards__shoes {
+        gap: 3rem;
+    }
+
+    .products__cards {
+        width: 18rem;
+    }
+
+    .products__cards-img img {
+        width: 12rem;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .text__frete {
+        padding: 0.3rem 0;
+    }
+
+    .home__main {
+        height: 45vh;
+    }
+
+    .text__first {
+        left: 5rem;
+        top: 0.5rem;
+    }
+
+    .description__text {
+        width: 32rem;
+    }
+
+    .cards__shoes {
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+    }
+
+    .products__cards {
+        width: 16rem;
+    }
+
+    .products__cards-img img {
+        width: 10rem;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 768px) {
+    .text__frete {
+        padding: 0.2rem 0;
+        font-size: 0.8rem;
+    }
+
+    .home__main {
+        height: 45vh;
+        background-position: center;
+    }
+
+    .text__first {
+        left: 1rem;
+        top: 0.5rem;
+        text-align: center;
+    }
+
+    .description__logo {
+        flex-direction: column;
+        padding: 1rem 0;
+    }
+
+    .description__text {
+        width: 100%;
+        padding: 0 1rem;
+    }
+
+    .shoes__descriptions {
+        padding: 40px 0 40px 0;
+        gap: 2rem;
+    }
+
+    .cards__shoes {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    .products__cards {
+        width: 100%;
+    }
+
+    .products__cards-img {
+        height: 8rem;
+    }
+
+    .products__cards-img img {
+        width: 8rem;
+    }
+
+    .footer__text {
+        font-size: 0.8rem;
+    }
+}
